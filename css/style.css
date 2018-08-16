@@ -2,12 +2,19 @@
 
 /* link the web font used for the level 1 heading here */
 
+@font-face {
+  font-family: "Baskerville";
+  src: url(fonts/Baskerville.ttc) format('TrueType Collection');
+}
+
 /*////////// Global Styles //////////*/
+
+
 
 body {
 	background: #F3EBE9;
 	font-size: 100%;
-	font-family: 'Times New Roman', serif; 
+	font-family: 'Times New Roman', serif;
 }
 
 .wrapper {
@@ -17,4 +24,77 @@ body {
 	padding: 0 45px 20px;
 }
 
+img {
+	max-width: 100%;
+}
 /* Write all remaining styles here */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+	font-family: 'Baskerville', serif;
+	font-size: 5em;
+	color: rgb(152,173,166);
+	border-bottom: 1px solid rgb(152,173,166);
+	padding-bottom: 10px;
+}
+
+h1:hover {
+		color: rgb(111,127,122);
+}
+
+.banner-image img {
+	border: 5px solid rgb(152,173,166);
+	max-width: 100%;
+}
+
+section a {
+	color: rgb(25,132,187);
+	text-decoration: none;
+}
+
+
+h2 {
+	font-size: 2em;
+	color: rgb(111,127,122);
+}
+
+/*////////// Press Section //////////*/
+
+
+.col-1 {
+  float: left;
+	width: 24.25%;
+	border: 5px solid rgb(152,173,166);
+	background: rgb(247,240,238);
+}
+
+.col-1:hover {
+	border: 5px solid rgb(111,127,122);
+}
+
+[class*="col-"] {
+  margin-left: 1%;
+}
+
+.first {
+	margin-left: 0px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0px;
+  line-height: 0px;
+}
+
+footer {
+	text-align: right;
+	font-size: 0.75rem;
+}
